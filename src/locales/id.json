@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "singleBlock": "1. Single Block",
+    "blockchain": "2. Blockchain",
+    "digitalSignature": "3. Digital Signature"
+  },
+  "brand": "MBC Lab",
+  "sidebar": {
+    "title": "Info Cepat",
+    "singleBlock": {
+      "title": "Dasar Single Block",
+      "p1": "Sebuah blok berisi data, nonce (angka yang digunakan sekali), dan menghasilkan hash.",
+      "p2": "Hash dihitung dari nomor blok, nonce, dan data menggunakan SHA-256.",
+      "li1": "Klik \"Mine\" untuk menemukan nonce yang menghasilkan hash yang dimulai dengan 4 angka nol.",
+      "li2": "Coba ubah data setelah mining - perhatikan bagaimana hash berubah dan blok menjadi tidak valid (latar belakang berubah merah).",
+      "p3": "Ini menunjukkan mengapa data blockchain tidak dapat diubah - setiap perubahan langsung terlihat."
+    },
+    "blockchain": {
+      "title": "Fundamental Blockchain",
+      "p1": "Blok #1 adalah \"Genesis Block\" - blok pertama dalam rantai tanpa hash sebelumnya.",
+      "p2": "Setiap blok berikutnya menyertakan hash dari blok sebelumnya, menghubungkan mereka bersama.",
+      "li1": "Mine setiap blok untuk membuat rantai yang valid (semua blok berubah hijau).",
+      "li2": "Coba ubah data di blok sebelumnya - semua blok berikutnya menjadi tidak valid!",
+      "p3": "Reaksi berantai ini menunjukkan mengapa blockchain tahan terhadap perubahan: mengubah satu blok merusak seluruh rantai.",
+      "p4": "Untuk memperbaiki rantai, Anda harus menambang ulang blok yang diubah dan semua blok setelahnya."
+    },
+    "digitalSignature": {
+      "titleKeyPair": "Generasi Pasangan Kunci",
+      "p1": "Tanda tangan digital membuktikan bahwa pesan berasal dari orang tertentu.",
+      "li1": "Kunci privat disimpan rahasia dan digunakan untuk menandatangani pesan.",
+      "li2": "Kunci publik dapat dibagikan dengan semua orang dan digunakan untuk memverifikasi tanda tangan.",
+      "titleSignature": "Tanda Tangan Digital",
+      "p2": "Tanda tangan berubah jika pesan diubah, membuat perubahan terdeteksi.",
+      "p3": "Dalam blockchain, tanda tangan membuktikan siapa yang mengotorisasi transaksi tanpa mengungkapkan kunci privat mereka."
+    }
+  },
+  "singleBlockPage": {
+    "title": "Single Block"
+  },
+  "blockchainPage": {
+    "title": "Blockchain",
+    "description": "Buat urutan blok yang saling terhubung. Mengubah data di blok sebelumnya akan merusak rantai!",
+    "addBlock": "Tambah Blok"
+  },
+  "digitalSignaturePage": {
+    "title": "Tanda Tangan Digital",
+    "generateKeyPair": "Buat Pasangan Kunci Baru",
+    "generatedKeys": "Kunci yang Dihasilkan",
+    "privateKey": "Kunci Privat (Rahasiakan!)",
+    "publicKey": "Kunci Publik (Bagikan dengan semua)",
+    "signMessage": "1. Tandatangani Pesan",
+    "message": "Pesan",
+    "messagePlaceholder": "Masukkan pesan untuk ditandatangani...",
+    "messagePlaceholderVerify": "Masukkan pesan untuk diverifikasi...",
+    "signatureOutput": "Output Tanda Tangan",
+    "verifySignature": "2. Verifikasi Tanda Tangan",
+    "valid": "✓ Valid",
+    "invalid": "✗ Tidak Valid",
+    "pastePrivateKey": "Tempel kunci privat...",
+    "pastePublicKey": "Tempel kunci publik...",
+    "pasteSignature": "Tempel tanda tangan...",
+    "signature": "Tanda Tangan"
+  },
+  "blockCard": {
+    "block": "Blok",
+    "nonce": "Nonce",
+    "data": "Data",
+    "dataPlaceholder": "Masukkan data...",
+    "hash": "Hash",
+    "prevHash": "Hash Sebelumnya",
+    "mine": "Mine"
+  }
+}

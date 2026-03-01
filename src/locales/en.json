@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "singleBlock": "1. Single Block",
+    "blockchain": "2. Blockchain",
+    "digitalSignature": "3. Digital Signature"
+  },
+  "brand": "MBC Lab",
+  "sidebar": {
+    "title": "Quick Info",
+    "singleBlock": {
+      "title": "Single Block Basics",
+      "p1": "A block contains data, a nonce (number used once), and produces a hash.",
+      "p2": "The hash is calculated from the block number, nonce, and data using SHA-256.",
+      "li1": "Click \"Mine\" to find a nonce that produces a hash starting with 4 zeros.",
+      "li2": "Try changing the data after mining - notice how the hash changes and the block becomes invalid (background turns red).",
+      "p3": "This demonstrates why blockchain data is immutable - any change is immediately visible."
+    },
+    "blockchain": {
+      "title": "Blockchain Fundamentals",
+      "p1": "Block #1 is the \"Genesis Block\" - the first block in the chain with no previous hash.",
+      "p2": "Each subsequent block includes the hash of the previous block, linking them together.",
+      "li1": "Mine each block to create a valid chain (all blocks turn green).",
+      "li2": "Try changing data in an earlier block - all subsequent blocks become invalid!",
+      "p3": "This chain reaction shows why blockchains are tamper-evident: changing one block breaks the entire chain.",
+      "p4": "To fix the chain, you must re-mine the altered block and all blocks after it."
+    },
+    "digitalSignature": {
+      "titleKeyPair": "Key Pair Generation",
+      "p1": "Digital signatures prove that a message came from a specific person.",
+      "li1": "A private key is kept secret and used to sign messages.",
+      "li2": "A public key can be shared with everyone and used to verify signatures.",
+      "titleSignature": "Digital Signatures",
+      "p2": "The signature changes if the message is altered, making tampering detectable.",
+      "p3": "In blockchains, signatures prove who authorized a transaction without revealing their private key."
+    }
+  },
+  "singleBlockPage": {
+    "title": "Single Block"
+  },
+  "blockchainPage": {
+    "title": "Blockchain",
+    "description": "Create an interconnected sequence of blocks. Changing data in an earlier block breaks the chain!",
+    "addBlock": "Add Block"
+  },
+  "digitalSignaturePage": {
+    "title": "Digital Signature",
+    "generateKeyPair": "Generate New Key Pair",
+    "generatedKeys": "Generated Keys",
+    "privateKey": "Private Key (Keep Secret!)",
+    "publicKey": "Public Key (Share with everyone)",
+    "signMessage": "1. Sign Message",
+    "message": "Message",
+    "messagePlaceholder": "Enter message to sign...",
+    "messagePlaceholderVerify": "Enter message to verify...",
+    "signatureOutput": "Signature Output",
+    "verifySignature": "2. Verify Signature",
+    "valid": "✓ Valid",
+    "invalid": "✗ Invalid",
+    "pastePrivateKey": "Paste private key...",
+    "pastePublicKey": "Paste public key...",
+    "pasteSignature": "Paste signature...",
+    "signature": "Signature"
+  },
+  "blockCard": {
+    "block": "Block",
+    "nonce": "Nonce",
+    "data": "Data",
+    "dataPlaceholder": "Enter data...",
+    "hash": "Hash",
+    "prevHash": "Previous Hash",
+    "mine": "Mine"
+  }
+}
