@@ -49,6 +49,19 @@ const Sidebar = ({ activeTab }) => {
             <p>{t('sidebar.digitalSignature.p3')}</p>
           </div>
         );
+      case 'transaction':
+        return (
+          <div className="sidebar-content">
+            <h3>{t('sidebar.transaction.title')}</h3>
+            <p>{t('sidebar.transaction.p1')}</p>
+            <p>{t('sidebar.transaction.p2')}</p>
+            <ul>
+              <li>{t('sidebar.transaction.li1')}</li>
+              <li>{t('sidebar.transaction.li2')}</li>
+            </ul>
+            <p>{t('sidebar.transaction.p3')}</p>
+          </div>
+  );
       default:
         return null;
     }

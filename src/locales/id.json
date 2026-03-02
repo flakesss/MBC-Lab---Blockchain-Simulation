@@ -2,7 +2,8 @@
   "nav": {
     "singleBlock": "1. Single Block",
     "blockchain": "2. Blockchain",
-    "digitalSignature": "3. Digital Signature"
+    "digitalSignature": "3. Digital Signature",
+    "transaction": "4. Transaction"
   },
   "brand": "MBC Lab",
   "sidebar": {
@@ -32,6 +33,14 @@
       "titleSignature": "Tanda Tangan Digital",
       "p2": "Tanda tangan berubah jika pesan diubah, membuat perubahan terdeteksi.",
       "p3": "Dalam blockchain, tanda tangan membuktikan siapa yang mengotorisasi transaksi tanpa mengungkapkan kunci privat mereka."
+    },
+    "transaction": {
+      "title": "Transaksi & Tanda Tangan",
+      "p1": "Transaksi berisi pengirim (from), penerima (to), dan jumlah.",
+      "p2": "Data transaksi di-hash lalu ditandatangani menggunakan kunci privat pengirim.",
+      "li1": "Jika data transaksi berubah, tanda tangan menjadi tidak valid.",
+      "li2": "Verifikasi menggunakan kunci publik pengirim.",
+      "p3": "Ini memastikan hanya pemilik kunci privat yang dapat mengotorisasi transaksi."
     }
   },
   "singleBlockPage": {
@@ -60,6 +69,17 @@
     "pastePublicKey": "Tempel kunci publik...",
     "pasteSignature": "Tempel tanda tangan...",
     "signature": "Tanda Tangan"
+  },
+  "transactionPage": {
+    "title": "Transaksi",
+    "from": "Dari (Kunci Publik)",
+    "to": "Ke (Kunci Publik)",
+    "amount": "Jumlah",
+    "privateKey": "Kunci Privat (untuk tanda tangan)",
+    "hash": "Hash Transaksi",
+    "signature": "Tanda Tangan",
+    "valid": "✓ Valid",
+    "invalid": "✗ Tidak Valid"
   },
   "blockCard": {
     "block": "Blok",

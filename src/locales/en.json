@@ -2,7 +2,8 @@
   "nav": {
     "singleBlock": "1. Single Block",
     "blockchain": "2. Blockchain",
-    "digitalSignature": "3. Digital Signature"
+    "digitalSignature": "3. Digital Signature",
+    "transaction": "4. Transaction"
   },
   "brand": "MBC Lab",
   "sidebar": {
@@ -32,6 +33,14 @@
       "titleSignature": "Digital Signatures",
       "p2": "The signature changes if the message is altered, making tampering detectable.",
       "p3": "In blockchains, signatures prove who authorized a transaction without revealing their private key."
+    },
+    "transaction": {
+      "title": "Transaction & Signatures",
+      "p1": "A transaction contains sender (from), receiver (to), and amount.",
+      "p2": "The transaction data is hashed and signed using the sender's private key.",
+      "li1": "If any transaction data changes, the signature becomes invalid.",
+      "li2": "Verification uses the sender's public key.",
+      "p3": "This ensures only the owner of the private key can authorize a transaction."
     }
   },
   "singleBlockPage": {
@@ -60,6 +69,17 @@
     "pastePublicKey": "Paste public key...",
     "pasteSignature": "Paste signature...",
     "signature": "Signature"
+  },
+  "transactionPage": {
+    "title": "Transaction",
+    "from": "From (Public Key)",
+    "to": "To (Public Key)",
+    "amount": "Amount",
+    "privateKey": "Private Key (for signing)",
+    "hash": "Transaction Hash",
+    "signature": "Signature",
+    "valid": "✓ Valid",
+    "invalid": "✗ Invalid"
   },
   "blockCard": {
     "block": "Block",
