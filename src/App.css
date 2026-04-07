@@ -11,6 +11,7 @@
   display: flex;
   flex: 1;
   overflow: hidden; /* Prevent page scrolling, content will scroll inside */
+  position: relative;
 }
 
 .page-container {
@@ -335,8 +336,85 @@
 }
 
 @media (max-width: 768px) {
+  /* Layout */
+  .page-container {
+    padding: 1rem;
+  }
+  
+  /* Navbar */
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    flex: 1;
+  }
+
+  .navbar-logo {
+    height: 48px;
+  }
+
+  .navbar-tabs {
+    position: static;
+    transform: none;
+    width: 100%;
+    order: 3;
+    margin-top: 1rem;
+    justify-content: flex-start;
+    overflow-x: auto;
+    /* Hide scrollbar for a cleaner look */
+    scrollbar-width: none; 
+  }
+  
+  .navbar-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-tab {
+    white-space: nowrap;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  /* Sidebar Fixed Overlay */
+  .sidebar-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 50;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .sidebar-container.collapsed {
+    box-shadow: none;
+  }
+
+  .sidebar-toggle-btn {
+    box-shadow: -4px 0 10px rgba(0,0,0,0.1);
+    background-color: var(--color-bg);
+  }
+
+  /* Digital Signature Split View */
   .split-view {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Block Cards */
+  .block-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .block-card-title {
+    font-size: 1.1rem;
+  }
+
+  .hash-box {
+    font-size: 0.65rem;
   }
 }
 
